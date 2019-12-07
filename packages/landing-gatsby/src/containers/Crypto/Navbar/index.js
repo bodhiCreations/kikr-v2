@@ -1,18 +1,18 @@
-import React, { useContext } from 'react';
-import PropTypes from 'prop-types';
-import { useStaticQuery, graphql, Link } from 'gatsby';
-import NavbarWrapper from 'reusecore/src/elements/Navbar';
-import Drawer from 'reusecore/src/elements/Drawer';
-import Button from 'reusecore/src/elements/Button';
-import Logo from 'reusecore/src/elements/UI/Logo';
-import Box from 'reusecore/src/elements/Box';
-import HamburgMenu from 'common/src/components/HamburgMenu';
-import Container from 'common/src/components/UI/Container';
-import { DrawerContext } from 'common/src/contexts/DrawerContext';
-import ScrollSpyMenu from 'common/src/components/ScrollSpyMenu';
+import React, { useContext } from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql, Link } from "gatsby";
+import NavbarWrapper from "reusecore/src/elements/Navbar";
+import Drawer from "reusecore/src/elements/Drawer";
+import Button from "reusecore/src/elements/Button";
+import Logo from "reusecore/src/elements/UI/Logo";
+import Box from "reusecore/src/elements/Box";
+import HamburgMenu from "common/src/components/HamburgMenu";
+import Container from "common/src/components/UI/Container";
+import { DrawerContext } from "common/src/contexts/DrawerContext";
+import ScrollSpyMenu from "common/src/components/ScrollSpyMenu";
 
-import LogoImage from 'common/src/assets/image/saasModern/logo-white.png';
-import LogoImageAlt from 'common/src/assets/image/saasModern/logo.png';
+import LogoImage from "common/src/assets/image/logo-white.png";
+import LogoImageAlt from "common/src/assets/image/logo.png";
 
 const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
   const { state, dispatch } = useContext(DrawerContext);
@@ -20,7 +20,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
   // Toggle drawer
   const toggleHandler = () => {
     dispatch({
-      type: 'TOGGLE',
+      type: "TOGGLE"
     });
   };
 
@@ -41,14 +41,14 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
       <Container>
         <Box {...row}>
           <Logo
-            href="/crypto"
+            href="./"
             logoSrc={LogoImage}
             title="Portfolio"
             logoStyle={logoStyle}
             className="main-logo"
           />
           <Logo
-            href="/crypto"
+            href="./"
             logoSrc={LogoImageAlt}
             title="Portfolio"
             logoStyle={logoStyle}
@@ -61,9 +61,9 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
               offset={-70}
             />
 
-            <Link className="navbar_button" to="/crypto">
+            {/* <Link className="navbar_button" to="/crypto">
               <Button {...button} title="GET STARTED" />
-            </Link>
+            </Link> */}
             <Drawer
               width="420px"
               placement="right"
@@ -78,8 +78,8 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                 offset={-100}
               />
 
-              <Link className="navbar_drawer_button" to="/crypto">
-                <Button {...button} title="GET STARTED" />
+              <Link className="navbar_drawer_button" to="">
+                <Button {...button} title="Message Us" />
               </Link>
             </Drawer>
           </Box>
@@ -94,38 +94,38 @@ Navbar.propTypes = {
   logoStyle: PropTypes.object,
   button: PropTypes.object,
   row: PropTypes.object,
-  menuWrapper: PropTypes.object,
+  menuWrapper: PropTypes.object
 };
 
 Navbar.defaultProps = {
   navbarStyle: {
-    minHeight: '70px',
-    display: 'block',
+    minHeight: "70px",
+    display: "block"
   },
   row: {
     flexBox: true,
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    width: '100%',
+    justifyContent: "space-between",
+    alignItems: "center",
+    width: "100%"
   },
   logoStyle: {
-    maxWidth: ['120px', '130px'],
+    maxWidth: ["120px", "130px"]
   },
   button: {
-    type: 'button',
-    fontSize: '13px',
-    fontWeight: '700',
-    borderRadius: '4px',
-    pl: '15px',
-    pr: '15px',
-    colors: 'secondaryWithBg',
-    minHeight: 'auto',
-    height: '40px',
+    type: "button",
+    fontSize: "13px",
+    fontWeight: "700",
+    borderRadius: "4px",
+    pl: "15px",
+    pr: "15px",
+    colors: "secondaryWithBg",
+    minHeight: "auto",
+    height: "40px"
   },
   menuWrapper: {
     flexBox: true,
-    alignItems: 'center',
-  },
+    alignItems: "center"
+  }
 };
 
 export default Navbar;

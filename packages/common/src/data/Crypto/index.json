@@ -6,20 +6,20 @@
       "offset": "0"
     },
     {
-      "label": "Feature",
-      "path": "#trusted",
-      "offset": "0"
+      "label": "About",
+      "path": "#scalable",
+      "offset": "50"
     },
     {
-      "label": "Offers",
-      "path": "#scalable",
+      "label": "Facilities",
+      "path": "#featureslider",
       "offset": "-10"
     },
 
     {
-      "label": "Payment Proofs",
-      "path": "#featureslider",
-      "offset": "-10"
+      "label": "Partners",
+      "path": "#betasection",
+      "offset": "+100"
     },
     {
       "label": "Contact Us",
@@ -29,49 +29,43 @@
   ],
   "TESTIMONIALS": [
     {
-      "review": "Best working experience  with this amazing team & in future, we want to work together",
-      "name": "Jon Doe",
-      "designation": "CEO of Dell Co.",
-      "avatar": "../../assets/image/crypto/author-4.jpg"
+      "review": "I play football for a fun work-out and am totally impressed with the services and diligence at Smart Vision School. Definitely recommend to football enthusiasts to engage in a game of fun.",
+      "name": "Moise Swamp Rimbon",
+      "designation": "Professional Mixed Martial Artist",
+      "avatar": "../../assets/image/crypto/author-1.jpg"
     },
     {
-      "review": "Impressed with master class support of the team and really look forward for the future.",
-      "name": "Jon Doe",
-      "designation": "Co Founder of IBM",
-      "avatar": "../../assets/image/crypto/author-2.jpg"
+      "review": "Great facility to organise company football games. It has brought us closer as a team to bond over a game. Definitely recommended for friends/colleagues.",
+      "name": "Shammas Shoukath",
+      "designation": "Dubai Asset Management",
+      "avatar": "../../assets/image/crypto/author-1.jpg"
     },
     {
-      "review": "I have bought more than 10 themes on ThemeForest, and this is the first one I review.",
-      "name": "Jeny Doe",
-      "designation": "Manager of Hp co.",
-      "avatar": "../../assets/image/crypto/author-3.jpg"
-    },
-    {
-      "review": "Impressed with master class support of the team and really look forward for the future.",
-      "name": "Jon Doe",
-      "designation": "Manager of Hp co.",
+      "review": "Amazing services for a company game. We received the best efforts making sure we as a team was satisfied. Smart Vision School has one of the best astro-turfs in Dubai including free parking and other amenities.",
+      "name": "Kesav Raj",
+      "designation": "Gulf Business Machines",
       "avatar": "../../assets/image/crypto/author-1.jpg"
     }
   ],
   "TRANSACTIONS_FEATURE": [
     {
       "image": "../../assets/image/crypto/tf1.svg",
-      "title": "Create Payment Address",
+      "title": "Unparalleled Services",
       "des": "Provide your payout wallet address and callback URL to PayBear API."
     },
     {
       "image": "../../assets/image/crypto/tf2.svg",
-      "title": "Ask for Payment",
+      "title": "Passionate Team",
       "des": "Show your customer the wallet address as well as the payment amount."
     },
     {
       "image": "../../assets/image/crypto/tf3.svg",
-      "title": "Get Paid",
+      "title": "Outstanding Facilities",
       "des": "Payment is sent to the payout wallet immediately."
     },
     {
       "image": "../../assets/image/crypto/tf4.svg",
-      "title": "Get Payment Notification.",
+      "title": "Cost Effective",
       "des": "Callbacks are sent to the URL you specified. You can process customer order"
     }
   ],
@@ -110,40 +104,35 @@
   "SCALABLE_FEATURE": [
     {
       "image": "../../assets/image/crypto/jackpot.svg",
-      "title": "Daily Jackpot",
-      "des": "35000 CLV"
+      "title": "Playing Fields",
+      "des": "3"
     },
     {
       "image": "../../assets/image/crypto/jackpot.svg",
-      "title": "Weekly Jackpot",
-      "des": "250000 CLV"
+      "title": "Hours Played",
+      "des": "400+"
     },
     {
       "image": "../../assets/image/crypto/jackpot.svg",
-      "title": "Monthly Jackpot",
-      "des": "4999697 CLV"
-    },
-    {
-      "image": "../../assets/image/crypto/jackpot.svg",
-      "title": "Yearly Jackpot",
-      "des": "300245785000 CLV"
+      "title": "Active Players",
+      "des": "250+"
     }
   ],
   "BETA_FEATURE": [
     {
       "image": "../../assets/image/crypto/beta-1.svg",
-      "title": "SEPA Transfers",
-      "des": "Deposit & Withdraw money."
+      "title": "Expat Football Association",
+      "des": "official partner"
     },
     {
       "image": "../../assets/image/crypto/beta-2.svg",
-      "title": "24/7 Support",
-      "des": "Always here for you."
+      "title": "Radiant ",
+      "des": "official partner"
     },
     {
       "image": "../../assets/image/crypto/beta-3.svg",
-      "title": "Secure",
-      "des": "Your money is safe."
+      "title": "Smart Vision School",
+      "des": "official partner"
     }
   ],
   "menuWidget": [
@@ -154,27 +143,7 @@
         {
           "id": 1,
           "url": "#",
-          "text": "Support Center"
-        },
-        {
-          "id": 2,
-          "url": "#",
-          "text": "Customer Support"
-        },
-        {
-          "id": 3,
-          "url": "#",
-          "text": "About Us"
-        },
-        {
-          "id": 4,
-          "url": "#",
-          "text": "Copyright"
-        },
-        {
-          "id": 5,
-          "url": "#",
-          "text": "Popular Campaign"
+          "text": "Return Policy"
         }
       ]
     },
@@ -186,26 +155,6 @@
           "id": 1,
           "url": "#",
           "text": "Return Policy"
-        },
-        {
-          "id": 2,
-          "url": "#",
-          "text": "Privacy Policy"
-        },
-        {
-          "id": 3,
-          "url": "#",
-          "text": "Terms & Conditions"
-        },
-        {
-          "id": 4,
-          "url": "#",
-          "text": "Site Map"
-        },
-        {
-          "id": 5,
-          "url": "#",
-          "text": "Store Hours"
         }
       ]
     },
@@ -217,26 +166,6 @@
           "id": 1,
           "url": "#",
           "text": "Press inquiries"
-        },
-        {
-          "id": 2,
-          "url": "#",
-          "text": "Social media directories"
-        },
-        {
-          "id": 3,
-          "url": "#",
-          "text": "Images & B-roll"
-        },
-        {
-          "id": 4,
-          "url": "#",
-          "text": "Permissions"
-        },
-        {
-          "id": 5,
-          "url": "#",
-          "text": "Speaker requests"
         }
       ]
     }
@@ -245,14 +174,6 @@
     {
       "label": "English",
       "value": "eng"
-    },
-    {
-      "label": "Chinese",
-      "value": "chinese"
-    },
-    {
-      "label": "Indian",
-      "value": "indian"
     }
   ]
 }

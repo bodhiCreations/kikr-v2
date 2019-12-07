@@ -1,41 +1,41 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import ImageGallery from 'react-image-gallery';
-import 'react-image-gallery/styles/css/image-gallery.css';
-import Box from 'reusecore/src/elements/Box';
-import Text from 'reusecore/src/elements/Text';
-import Heading from 'reusecore/src/elements/Heading';
-import FeatureBlock from 'common/src/components/FeatureBlock';
-import Container from 'common/src/components/UI/Container';
-import { FeatureSliderWrapper } from './cryptoSlides.style';
-import Image1 from 'common/src/assets/image/crypto/slider-1.png';
-import Image2 from 'common/src/assets/image/crypto/slider-2.png';
-import Image3 from 'common/src/assets/image/crypto/slider-3.png';
+import React from "react";
+import PropTypes from "prop-types";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+import Box from "reusecore/src/elements/Box";
+import Text from "reusecore/src/elements/Text";
+import Heading from "reusecore/src/elements/Heading";
+import FeatureBlock from "common/src/components/FeatureBlock";
+import Container from "common/src/components/UI/Container";
+import { FeatureSliderWrapper } from "./cryptoSlides.style";
+import Image1 from "common/src/assets/image/crypto/slider-1.png";
+import Image2 from "common/src/assets/image/crypto/slider-2.png";
+import Image3 from "common/src/assets/image/crypto/slider-3.png";
 const images = [
   {
     original: `${Image1}`,
-    originalAlt: 'slide one',
+    originalAlt: "slide one"
   },
   {
     original: `${Image2}`,
-    originalAlt: 'slide two',
-  },
-  {
-    original: `${Image3}`,
-    originalAlt: 'slide three',
-  },
-  {
-    original: `${Image2}`,
-    originalAlt: 'slide four',
+    originalAlt: "slide two"
   },
   {
     original: `${Image1}`,
-    originalAlt: 'slide five',
+    originalAlt: "slide three"
   },
   {
-    original: `${Image3}`,
-    originalAlt: 'slide six',
+    original: `${Image2}`,
+    originalAlt: "slide four"
   },
+  {
+    original: `${Image1}`,
+    originalAlt: "slide five"
+  },
+  {
+    original: `${Image2}`,
+    originalAlt: "slide six"
+  }
 ];
 
 const FeatureSlider = ({ row, title, description, sectionSubTitle }) => {
@@ -43,17 +43,12 @@ const FeatureSlider = ({ row, title, description, sectionSubTitle }) => {
     <FeatureSliderWrapper id="featureslider">
       <Container noGutter mobileGutter>
         <Box className="row" {...row}>
-          <Text content="Fast, Cheap, Zero Fraud" {...sectionSubTitle} />
+          <Text content="Our Facilities" {...sectionSubTitle} />
           <FeatureBlock
-            title={
-              <Heading
-                content="A Trusted Proof of Investment Vehicle"
-                {...title}
-              />
-            }
+            title={<Heading content="State of the art centers" {...title} />}
             description={
               <Text
-                content="Easily buy, sell or exchange over 30 different cryptocurrencies. Now euro deposits and withdrawn available."
+                content="Never seen before centers. Feel the vibe of being an athlete"
                 {...description}
               />
             }
@@ -67,7 +62,7 @@ const FeatureSlider = ({ row, title, description, sectionSubTitle }) => {
             showFullscreenButton={false}
             showNav={false}
             showBullets={true}
-            autoPlay={false}
+            autoPlay={true}
           />
         </Box>
       </Container>
@@ -80,7 +75,7 @@ FeatureSlider.propTypes = {
   sectionHeader: PropTypes.object,
   sectionTitle: PropTypes.object,
   sectionSubTitle: PropTypes.object,
-  row: PropTypes.object,
+  row: PropTypes.object
 };
 
 // Trusted default style
@@ -88,39 +83,39 @@ FeatureSlider.defaultProps = {
   // Trusted section row default style
   row: {
     flexBox: true,
-    flexWrap: 'wrap',
-    flexDirection: 'column',
-    alignSelf: 'center',
-    justifyContent: 'center',
-    ml: '-15px',
-    mr: '-15px',
+    flexWrap: "wrap",
+    flexDirection: "column",
+    alignSelf: "center",
+    justifyContent: "center",
+    ml: "-15px",
+    mr: "-15px"
   },
   title: {
-    fontSize: ['24px', '26px', '30px', '36px', '40px'],
-    lineHeight: ['30px', '32px', '40px', '50px', '55px'],
-    fontWeight: '700',
-    color: '#32325d',
-    letterSpacing: '-0.010em',
-    mb: '20px',
-    textAlign: 'center',
+    fontSize: ["24px", "26px", "30px", "36px", "40px"],
+    lineHeight: ["30px", "32px", "40px", "50px", "55px"],
+    fontWeight: "700",
+    color: "#32325d",
+    letterSpacing: "-0.010em",
+    mb: "20px",
+    textAlign: "center"
   },
   description: {
-    fontSize: '16px',
-    fontWeight: '400',
-    color: '#525f7f',
-    lineHeight: '28px',
-    mb: ['25px', '25px', '30px', '30px', '45px'],
-    textAlign: 'center',
+    fontSize: "16px",
+    fontWeight: "400",
+    color: "#525f7f",
+    lineHeight: "28px",
+    mb: ["25px", "25px", "30px", "30px", "45px"],
+    textAlign: "center"
   },
   sectionSubTitle: {
-    as: 'span',
-    fontSize: ['16px', '16px', '18px', '20px', '20px'],
-    fontFamily: 'Poppins',
-    fontWeight: '600',
-    lineHeight: '27px',
-    color: '#525f7f',
-    textAlign: 'center',
-  },
+    as: "span",
+    fontSize: ["16px", "16px", "18px", "20px", "20px"],
+    fontFamily: "Poppins",
+    fontWeight: "600",
+    lineHeight: "27px",
+    color: "#525f7f",
+    textAlign: "center"
+  }
 };
 
 export default FeatureSlider;

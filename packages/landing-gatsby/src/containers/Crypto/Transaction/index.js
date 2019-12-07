@@ -1,15 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
-import Box from 'reusecore/src/elements/Box';
-import Fade from 'react-reveal/Fade';
-import Text from 'reusecore/src/elements/Text';
-import Heading from 'reusecore/src/elements/Heading';
-import Button from 'reusecore/src/elements/Button';
-import Image from 'reusecore/src/elements/Image';
-import FeatureBlock from 'common/src/components/FeatureBlock';
-import Container from 'common/src/components/UI/Container';
-import { TransactionsWrapper, FeatureSection } from './transaction.style';
+import React from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
+import Box from "reusecore/src/elements/Box";
+import Fade from "react-reveal/Fade";
+import Text from "reusecore/src/elements/Text";
+import Heading from "reusecore/src/elements/Heading";
+import Button from "reusecore/src/elements/Button";
+import Image from "reusecore/src/elements/Image";
+import FeatureBlock from "common/src/components/FeatureBlock";
+import Container from "common/src/components/UI/Container";
+import { TransactionsWrapper, FeatureSection } from "./transaction.style";
 
 const TransactionsHistory = ({
   row,
@@ -20,7 +20,7 @@ const TransactionsHistory = ({
   sectionSubTitle,
   cardArea,
   featureTitleStyle,
-  featureDescriptionStyle,
+  featureDescriptionStyle
 }) => {
   const Data = useStaticQuery(graphql`
     query {
@@ -40,23 +40,9 @@ const TransactionsHistory = ({
     <TransactionsWrapper id="transactions">
       <Container>
         <Box className="row" {...row}>
-          <Box className="colleft" {...col} style={{ flexDirection: 'column' }}>
+          <Box className="colleft" {...col} style={{ flexDirection: "column" }}>
+            <FeatureBlock title={<Heading content="Why Kikr?" {...title} />} />
             <Text content="How Transactions Work" {...sectionSubTitle} />
-            <FeatureBlock
-              title={
-                <Heading
-                  content="Our wallet is built for the crypto novice"
-                  {...title}
-                />
-              }
-              description={
-                <Text
-                  content="You can trust us for any kind of services and some of the world class companies have also trusted us ."
-                  {...description}
-                />
-              }
-              button={<Button title="GET DOCS" {...btnStyle} />}
-            />
           </Box>
           <Box className="colright" {...col} {...cardArea}>
             <FeatureSection>
@@ -89,7 +75,7 @@ TransactionsHistory.propTypes = {
   row: PropTypes.object,
   col: PropTypes.object,
   featureTitleStyle: PropTypes.object,
-  featureDescriptionStyle: PropTypes.object,
+  featureDescriptionStyle: PropTypes.object
 };
 
 // Transactions default style
@@ -97,66 +83,66 @@ TransactionsHistory.defaultProps = {
   // Transactions section row default style
   row: {
     flexBox: true,
-    flexWrap: 'wrap',
-    ml: '-15px',
-    mr: '-15px',
+    flexWrap: "wrap",
+    ml: "-15px",
+    mr: "-15px"
   },
   // Transactions section col default style
   col: {
-    pr: '15px',
-    pl: '15px',
+    pr: "15px",
+    pl: "15px",
     width: [1, 1 / 2, 1 / 2, 1 / 2, 1 / 2],
     flexBox: true,
-    alignSelf: 'center',
+    alignSelf: "center"
   },
   // Transactions section title default style
   title: {
-    fontSize: ['24px', '26px', '30px', '36px', '40px'],
-    lineHeight: ['30px', '32px', '40px', '50px', '55px'],
-    fontWeight: '700',
-    color: '#32325d',
-    letterSpacing: '-0.010em',
-    mb: '20px',
-    maxWidth: ['100%', '100%', '100%', '100%', '415px'],
+    fontSize: ["24px", "26px", "30px", "36px", "40px"],
+    lineHeight: ["30px", "32px", "40px", "50px", "55px"],
+    fontWeight: "700",
+    color: "#32325d",
+    letterSpacing: "-0.010em",
+    mb: "20px",
+    maxWidth: ["100%", "100%", "100%", "100%", "415px"]
   },
   // Transactions section description default style
   description: {
-    fontSize: '16px',
-    fontWeight: '400',
-    color: '#525f7f',
-    lineHeight: '28px',
-    mb: ['30px', '30px', '40px', '40px', '55px'],
-    maxWidth: ['100%', '100%', '100%', '100%', '430px'],
+    fontSize: "16px",
+    fontWeight: "400",
+    color: "#525f7f",
+    lineHeight: "28px",
+    mb: ["30px", "30px", "40px", "40px", "55px"],
+    maxWidth: ["100%", "100%", "100%", "100%", "430px"]
   },
   sectionSubTitle: {
-    as: 'span',
-    fontSize: ['16px', '16px', '18px', '20px', '20px'],
-    fontFamily: 'Poppins',
-    fontWeight: '600',
-    lineHeight: '27px',
-    color: '#525f7f',
+    as: "span",
+    fontSize: ["16px", "16px", "18px", "20px", "20px"],
+    fontFamily: "Poppins",
+    fontWeight: "600",
+    lineHeight: "27px",
+    color: "#525f7f"
   },
   // Button default style
   btnStyle: {
-    minWidth: '156px',
-    fontSize: '14px',
-    fontWeight: '500',
+    minWidth: "156px",
+    fontSize: "14px",
+    fontWeight: "500"
   },
   featureTitleStyle: {
-    fontSize: ['18px', '18px', '20px', '20px', '20px'],
-    lineHeight: ['25px', '27px', '27px', '27px', '27px'],
-    fontWeight: '500',
-    color: '#32325d',
-    letterSpacing: '-0.010em',
-    mb: '10px',
+    fontSize: ["18px", "18px", "20px", "20px", "20px"],
+    lineHeight: ["25px", "27px", "27px", "27px", "27px"],
+    fontWeight: "500",
+    color: "#32325d",
+    letterSpacing: "-0.010em",
+    mb: "10px"
   },
   // Transactions section description default style
   featureDescriptionStyle: {
-    fontSize: '16px',
-    fontWeight: '400',
-    color: '#525f7f',
-    lineHeight: '27px',
-  },
+    fontSize: "16px",
+    fontWeight: "400",
+    color: "#525f7f",
+    lineHeight: "27px"
+  }
 };
 
 export default TransactionsHistory;

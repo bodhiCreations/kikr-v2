@@ -21,7 +21,7 @@ export default () => {
   return (
     <ThemeProvider theme={cryptoTheme}>
       <Fragment>
-        <SEO title="Crypto | A react next landing page" />
+        <SEO title="Kikr |  Play your favourite sport in Dubai" />
         <ResetCSS />
         <GlobalStyle />
         <ContentWrapper>
@@ -32,9 +32,10 @@ export default () => {
           </Sticky>
           <Banner />
           <BannerSlider />
-          <Transactions />
-          <ControlSections />
-          <TrustedProofSections />
+
+          {/* <Transactions />
+          <ControlSections /> */
+          /* <TrustedProofSections /> */}
           <ScalableSections />
           <SlideSections />
           <BetaSections />
