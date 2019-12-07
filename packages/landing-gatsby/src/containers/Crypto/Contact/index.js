@@ -51,7 +51,7 @@ const ContactSection = ({
               <ContactFromWrapper>
                 <Input
                   inputType="email"
-                  placeholder="Enter Your Email address"
+                  placeholder="Enter Your Message"
                   iconPosition="right"
                   isMaterial={false}
                   className="email_input"
