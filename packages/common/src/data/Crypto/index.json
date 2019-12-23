@@ -72,48 +72,48 @@
   "PROOFS_FEATURE": [
     {
       "image": "../../assets/image/crypto/proof1.svg",
-      "title": "Instant trading",
-      "des": "Never miss a price swing."
+      "title": "30 AED/Game",
+      "des": "1 hour session"
     },
     {
       "image": "../../assets/image/crypto/proof2.svg",
-      "title": "No hidden fees",
-      "des": "know our fees upfront."
+      "title": "250 AED/Month",
+      "des": "1 session / Game Day"
     },
     {
       "image": "../../assets/image/crypto/proof3.svg",
-      "title": "Secure storage",
-      "des": "Sleep with peace of mind."
+      "title": "350 AED/Month",
+      "des": "Unlimited / Game Day"
     },
     {
       "image": "../../assets/image/crypto/proof4.svg",
-      "title": "Systematic trading",
-      "des": "History intraday market."
+      "title": "Group 1",
+      "des": "7.00 PM to 8.00 PM"
     },
     {
-      "image": "../../assets/image/crypto/proof5.svg",
-      "title": "Network Effect",
-      "des": "Casinos contribute 1%."
+      "image": "../../assets/image/crypto/proof4.svg",
+      "title": "Group 2",
+      "des": "8.00 PM to 9.00 PM"
     },
     {
-      "image": "../../assets/image/crypto/proof6.svg",
-      "title": "Bigger Rewards",
-      "des": "Players are incentivized."
+      "image": "../../assets/image/crypto/proof4.svg",
+      "title": "Group 3",
+      "des": "9.00 PM to 10.00 PM"
     }
   ],
   "SCALABLE_FEATURE": [
     {
-      "image": "../../assets/image/crypto/jackpot.svg",
+      "image": "../../assets/image/icon-2.png",
       "title": "Playing Fields",
       "des": "3"
     },
     {
-      "image": "../../assets/image/crypto/jackpot.svg",
+      "image": "../../assets/image/icon-1.png",
       "title": "Hours Played",
       "des": "400+"
     },
     {
-      "image": "../../assets/image/crypto/jackpot.svg",
+      "image": "../../assets/image/icon-4.png",
       "title": "Active Players",
       "des": "250+"
     }

@@ -9,7 +9,7 @@ import Heading from "reusecore/src/elements/Heading";
 import FeatureBlock from "common/src/components/FeatureBlock";
 import Container from "common/src/components/UI/Container";
 import { ScalableWrapper, FeatureSection } from "./scalable.style";
-import ScalableImage from "common/src/assets/image/crypto/scalable.jpg";
+import ScalableImage from "common/src/assets/image/social-4.png";
 
 const ScalableHistory = ({
   row,

@@ -32,11 +32,13 @@ export default () => {
           </Sticky>
           <Banner />
           <BannerSlider />
-
+          <ScalableSections />
+          <ControlSections />
+          <TrustedProofSections />
           {/* <Transactions />
           <ControlSections /> */
           /* <TrustedProofSections /> */}
-          <ScalableSections />
+
           <SlideSections />
           <BetaSections />
           <Footer />

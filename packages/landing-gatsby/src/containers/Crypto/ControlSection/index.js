@@ -1,17 +1,17 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
-import Countdown from 'react-countdown-now';
-import Box from 'reusecore/src/elements/Box';
-import Fade from 'react-reveal/Fade';
-import Image from 'reusecore/src/elements/Image';
-import Text from 'reusecore/src/elements/Text';
-import Heading from 'reusecore/src/elements/Heading';
-import Button from 'reusecore/src/elements/Button';
-import FeatureBlock from 'common/src/components/FeatureBlock';
-import Container from 'common/src/components/UI/Container';
-import { ControlWrapper } from './controlSection.style';
-import ControlImage from 'common/src/assets/image/crypto/control.jpg';
+import React from "react";
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import Countdown from "react-countdown-now";
+import Box from "reusecore/src/elements/Box";
+import Fade from "react-reveal/Fade";
+import Image from "reusecore/src/elements/Image";
+import Text from "reusecore/src/elements/Text";
+import Heading from "reusecore/src/elements/Heading";
+import Button from "reusecore/src/elements/Button";
+import FeatureBlock from "common/src/components/FeatureBlock";
+import Container from "common/src/components/UI/Container";
+import { ControlWrapper } from "./controlSection.style";
+import ControlImage from "common/src/assets/image/social-2.png";
 
 const Completionist = () => (
   <span className="readMore">You are good to go!</span>
@@ -49,13 +49,13 @@ const ControlSection = ({
   btnStyle,
   sectionSubTitle,
   cardArea,
-  readMoreTitle,
+  readMoreTitle
 }) => {
   return (
     <ControlWrapper id="control">
       <Container>
         <Box className="row" {...row}>
-          <Box className="colleft" {...col} style={{ flexDirection: 'column' }}>
+          <Box className="colleft" {...col} style={{ flexDirection: "column" }}>
             <Image
               src={ControlImage}
               className="controlImage"
@@ -63,49 +63,26 @@ const ControlSection = ({
             />
           </Box>
           <Box className="colright" {...col} {...cardArea}>
-            <Text
+            {/* <Text
               content="Effortless crypto for everyone."
               {...sectionSubTitle}
-            />
+            /> */}
             <FeatureBlock
-              title={
-                <Heading
-                  content="Take control of your credit and identity."
-                  {...title}
-                />
-              }
+              title={<Heading content="Social Football" {...title} />}
               description={
                 <Text
-                  content="Crumbs makes crypto investing effortless and automated, so now you would not miss the right time to buy. From the customer wallet to the marchent wallet in a few minute."
+                  content="Most of the football enthusiasists can't find groups, football fields or world class services at affordable price. We at kikr, offer high quality, competitive and fun element by organising games at the best football facilities with best service at affordable price"
                   {...description}
                 />
               }
             />
             <Box className="readMoreSection">
-              <Text content="Sale currently on hold." {...readMoreTitle} />
               <Link to="/crypto" className="readMore">
-                Read More.
+                Join our Social Football Community
               </Link>
-            </Box>
-            <Fade up>
-              <Box className="countDownSection">
-                <Countdown
-                  date={Date.now() + 909999999}
-                  renderer={renderer}
-                  completed={false}
-                />
-              </Box>
-            </Fade>
-            <Box className="countDownButton">
-              <Button
-                title="BUY TOKENS"
-                className="countDownMainButton"
-                {...btnStyle}
-              />
-              <Button
-                title="35% Bonus"
-                className="countDownDiscountButton"
-                {...btnStyle}
+              <Text
+                content="  to Engage, Meet and Enjoy football like never before!"
+                {...readMoreTitle}
               />
             </Box>
           </Box>
@@ -123,7 +100,7 @@ ControlSection.propTypes = {
   row: PropTypes.object,
   col: PropTypes.object,
   readMoreTitle: PropTypes.object,
-  btnStyle: PropTypes.object,
+  btnStyle: PropTypes.object
 };
 
 // Transactions default style
@@ -131,61 +108,61 @@ ControlSection.defaultProps = {
   // Transactions section row default style
   row: {
     flexBox: true,
-    flexWrap: 'wrap',
-    ml: '-15px',
-    mr: '-15px',
+    flexWrap: "wrap",
+    ml: "-15px",
+    mr: "-15px"
   },
   // Transactions section col default style
   col: {
-    pr: '15px',
-    pl: '15px',
+    pr: "15px",
+    pl: "15px",
     width: [1, 1 / 2, 1 / 2, 1 / 2, 1 / 2],
     flexBox: true,
-    alignSelf: 'center',
+    alignSelf: "center"
   },
   // Transactions section title default style
   title: {
-    fontSize: ['24px', '26px', '30px', '36px', '40px'],
-    lineHeight: ['30px', '32px', '40px', '50px', '55px'],
-    fontWeight: '700',
-    color: '#32325d',
-    letterSpacing: '-0.010em',
-    mb: '20px',
-    maxWidth: ['100%', '100%', '100%', '100%', '415px'],
+    fontSize: ["24px", "26px", "30px", "36px", "40px"],
+    lineHeight: ["30px", "32px", "40px", "50px", "55px"],
+    fontWeight: "700",
+    color: "#32325d",
+    letterSpacing: "-0.010em",
+    mb: "20px",
+    maxWidth: ["100%", "100%", "100%", "100%", "415px"]
   },
   // Transactions section description default style
   description: {
-    fontSize: '16px',
-    fontWeight: '400',
-    color: '#525f7f',
-    lineHeight: '28px',
-    mb: ['30px', '30px', '35px', '35px', '45px'],
-    maxWidth: ['100%', '100%', '100%', '100%', '430px'],
+    fontSize: "16px",
+    fontWeight: "400",
+    color: "#525f7f",
+    lineHeight: "28px",
+    mb: ["30px", "30px", "35px", "35px", "45px"],
+    maxWidth: ["100%", "100%", "100%", "100%", "430px"]
   },
   sectionSubTitle: {
-    as: 'span',
-    textAlign: 'left',
-    fontSize: ['16px', '16px', '18px', '20px', '20px'],
-    fontFamily: 'Poppins',
-    fontWeight: '600',
-    lineHeight: '27px',
-    color: '#525f7f',
+    as: "span",
+    textAlign: "left",
+    fontSize: ["16px", "16px", "18px", "20px", "20px"],
+    fontFamily: "Poppins",
+    fontWeight: "600",
+    lineHeight: "27px",
+    color: "#525f7f"
   },
   // Button default style
   btnStyle: {
-    minWidth: '156px',
-    fontSize: '14px',
-    fontWeight: '500',
+    minWidth: "156px",
+    fontSize: "14px",
+    fontWeight: "500"
   },
   readMoreTitle: {
-    as: 'span',
-    fontSize: ['18px', '18px', '20px', '20px', '20px'],
-    lineHeight: ['25px', '27px', '27px', '27px', '27px'],
-    fontWeight: '500',
-    color: '#32325d',
-    letterSpacing: '-0.010em',
-    mb: '10px',
-  },
+    as: "span",
+    fontSize: ["18px", "18px", "20px", "20px", "20px"],
+    lineHeight: ["25px", "27px", "27px", "27px", "27px"],
+    fontWeight: "500",
+    color: "#32325d",
+    letterSpacing: "-0.010em",
+    mb: "10px"
+  }
 };
 
 export default ControlSection;

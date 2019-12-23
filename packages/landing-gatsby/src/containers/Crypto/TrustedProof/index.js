@@ -41,13 +41,17 @@ const TrustedHistory = ({
       <Container noGutter mobileGutter>
         <Box className="row" {...row}>
           <Box className="colleft" {...col} style={{ flexDirection: "column" }}>
-            <FeatureBlock title={<Heading content="Why kikr?" {...title} />} />
+            <FeatureBlock
+              title={<Heading content="Kikr Social football" {...title} />}
+              description="Every saturdays, mondays and wednesdays"
+              additionalContent="Bibs, Water, Organiser and Fun included"
+            />
           </Box>
           <Box className="colright" {...col} {...cardArea}>
             <FeatureSection>
               {Data.cryptoJson.PROOFS_FEATURE.map((item, index) => (
                 <div key={`feature-${index}`} className="featureWrapper">
-                  <Image src={item.image.publicURL} alt={item.title} />
+                  {/* <Image src={item.image.publicURL} alt={item.title} /> */}
                   <Box className="contextPortion">
                     <Heading
                       as="h3"
