@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import BannerBG from 'common/src/assets/image/crypto/main_bg.svg';
+import styled from "styled-components";
+import BannerBG from "common/src/assets/image/crypto/main_bg.svg";
 
 const BannerWrapper = styled.section`
   padding-top: 210px;
@@ -20,7 +20,7 @@ const BannerWrapper = styled.section`
   }
   @media (max-width: 768px) {
     background-image: none;
-    background-color: #6d4efe;
+    background-color: #28b16d;
   }
 
   @media only screen and (max-width: 480px) {
@@ -97,7 +97,7 @@ const BannerWrapper = styled.section`
         padding-left: 15px;
         font-size: 15px;
         font-weight: 500 !important;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
       }
       &:hover {
         box-shadow: none !important;
