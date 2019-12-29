@@ -100,8 +100,8 @@ ScalableHistory.defaultProps = {
   },
   // Scalable section col default style
   col: {
-    pr: "15px",
-    pl: "15px",
+    pr: "10px",
+    pl: "10px",
     width: [1, 1 / 2, 1 / 2, 1 / 2, 1 / 2],
     flexBox: true,
     alignSelf: "center"
