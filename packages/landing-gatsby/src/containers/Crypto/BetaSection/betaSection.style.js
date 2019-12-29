@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const BetaSectionWrapper = styled.section`
   padding: 30px 0 400px;
@@ -6,7 +6,7 @@ const BetaSectionWrapper = styled.section`
 const FeatureSection = styled.section`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: left;
   align-items: center;
   @media (max-width: 768px) {
     justify-content: space-between;

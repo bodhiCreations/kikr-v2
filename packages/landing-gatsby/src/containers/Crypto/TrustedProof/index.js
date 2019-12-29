@@ -11,6 +11,7 @@ import Container from "common/src/components/UI/Container";
 import { TrustedWrapper, FeatureSection } from "./trustedProof.style";
 import AppButton from "common/src/assets/image/crypto/app.svg";
 import PlayButton from "common/src/assets/image/crypto/playstore.svg";
+import ScalableImage from "common/src/assets/image/social-5.jpg";
 
 const TrustedHistory = ({
   row,
@@ -47,22 +48,13 @@ const TrustedHistory = ({
               additionalContent="Bibs, Water, Organiser and Fun included"
             />
           </Box>
+
           <Box className="colright" {...col} {...cardArea}>
-            <FeatureSection>
-              {Data.cryptoJson.PROOFS_FEATURE.map((item, index) => (
-                <div key={`feature-${index}`} className="featureWrapper">
-                  {/* <Image src={item.image.publicURL} alt={item.title} /> */}
-                  <Box className="contextPortion">
-                    <Heading
-                      as="h3"
-                      content={item.title}
-                      {...featureTitleStyle}
-                    />
-                    <Text content={item.des} {...featureDescriptionStyle} />
-                  </Box>
-                </div>
-              ))}
-            </FeatureSection>
+            <Image
+              src={ScalableImage}
+              className="ScalableImage"
+              alt="Scalable Section Image"
+            />
           </Box>
         </Box>
       </Container>

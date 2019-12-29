@@ -11,36 +11,12 @@ import Button from "reusecore/src/elements/Button";
 import FeatureBlock from "common/src/components/FeatureBlock";
 import Container from "common/src/components/UI/Container";
 import { ControlWrapper } from "./controlSection.style";
-import ControlImage from "common/src/assets/image/social-2.png";
+import ControlImage from "common/src/assets/image/social-6.jpg";
 
 const Completionist = () => (
   <span className="readMore">You are good to go!</span>
 );
 
-const renderer = ({ days, hours, minutes, seconds, completed }) => {
-  if (completed) {
-    // Render a complete state
-    return <Completionist />;
-  } else {
-    // Render a countdown
-    return (
-      <div className="countPortion">
-        <div className="countSingle">
-          {days} <span className="countText">Days</span>
-        </div>
-        <div className="countSingle">
-          {hours} <span className="countText">Hours</span>
-        </div>
-        <div className="countSingle">
-          {minutes} <span className="countText">Minutes</span>
-        </div>
-        <div className="countSingle">
-          {seconds} <span className="countText">Seconds</span>
-        </div>
-      </div>
-    );
-  }
-};
 const ControlSection = ({
   row,
   col,
@@ -77,9 +53,9 @@ const ControlSection = ({
               }
             />
             <Box className="readMoreSection">
-              <Link to="/crypto" className="readMore">
+              <a href="https://wa.me/+971507121314" className="readMore">
                 Join our Social Football Community
-              </Link>
+              </a>
               <Text
                 content="  to Engage, Meet and Enjoy football like never before!"
                 {...readMoreTitle}

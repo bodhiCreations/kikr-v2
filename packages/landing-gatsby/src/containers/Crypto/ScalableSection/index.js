@@ -9,7 +9,7 @@ import Heading from "reusecore/src/elements/Heading";
 import FeatureBlock from "common/src/components/FeatureBlock";
 import Container from "common/src/components/UI/Container";
 import { ScalableWrapper, FeatureSection } from "./scalable.style";
-import ScalableImage from "common/src/assets/image/social-4.png";
+import ScalableImage from "common/src/assets/image/emotion-1.jpg";
 
 const ScalableHistory = ({
   row,
@@ -146,7 +146,8 @@ ScalableHistory.defaultProps = {
     fontWeight: "500",
     color: "#32325d",
     letterSpacing: "-0.010em",
-    mb: "10px"
+    mb: "10px",
+    minWidth: "140px"
   },
   // Scalable section description default style
   featureDescriptionStyle: {

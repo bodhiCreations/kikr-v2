@@ -8,9 +8,9 @@ import Heading from "reusecore/src/elements/Heading";
 import FeatureBlock from "common/src/components/FeatureBlock";
 import Container from "common/src/components/UI/Container";
 import { FeatureSliderWrapper } from "./cryptoSlides.style";
-import Image1 from "common/src/assets/image/crypto/slider-1.png";
-import Image2 from "common/src/assets/image/crypto/slider-2.png";
-import Image3 from "common/src/assets/image/crypto/slider-3.png";
+import Image1 from "common/src/assets/image/slider/1.jpg";
+import Image2 from "common/src/assets/image/slider/2.jpg";
+import Image3 from "common/src/assets/image/slider/3.jpg";
 const images = [
   {
     original: `${Image1}`,
@@ -21,20 +21,8 @@ const images = [
     originalAlt: "slide two"
   },
   {
-    original: `${Image1}`,
+    original: `${Image3}`,
     originalAlt: "slide three"
-  },
-  {
-    original: `${Image2}`,
-    originalAlt: "slide four"
-  },
-  {
-    original: `${Image1}`,
-    originalAlt: "slide five"
-  },
-  {
-    original: `${Image2}`,
-    originalAlt: "slide six"
   }
 ];
 

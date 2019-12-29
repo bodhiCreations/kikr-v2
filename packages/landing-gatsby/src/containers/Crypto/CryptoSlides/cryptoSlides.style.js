@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const FeatureSliderWrapper = styled.section`
   padding: 180px 0;
@@ -74,7 +74,7 @@ const FeatureSliderWrapper = styled.section`
           -ms-transform: translateY(-50%);
           transform: translateY(-50%);
           &::after {
-            content: '';
+            content: "";
             position: absolute;
             width: 8px;
             height: 8px;

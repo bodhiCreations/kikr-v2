@@ -38,7 +38,7 @@ const BannerSection = ({
   const ShareButtonGroup = () => (
     <Fragment>
       <Button
-        title="Share on Twitter"
+        title="Follow on Twitter"
         variant="textButton"
         iconPosition="left"
         icon={<Icon icon={socialTwitter} />}
@@ -46,7 +46,7 @@ const BannerSection = ({
         className="btnWithoutColor"
       />
       <Button
-        title="Share on Facebook"
+        title="Follow on Facebook"
         variant="textButton"
         iconPosition="left"
         icon={<Icon icon={facebook2} />}
@@ -68,7 +68,7 @@ const BannerSection = ({
               title={<Heading content="Play in Dubai" {...title} />}
               description={
                 <Text
-                  content="Agencies around the world are moving to the digital agencies. So, It is high time to introduce your agency digitaly."
+                  content="Welcome to the fastest growing community of social and competitive football in Dubai. We empower local communities to be fit, make new playpals and have fun at the best football fields for the most affordable rates."
                   {...description}
                 />
               }

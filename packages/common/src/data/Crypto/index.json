@@ -11,6 +11,11 @@
       "offset": "50"
     },
     {
+      "label": "Social Football",
+      "path": "#control",
+      "offset": "50"
+    },
+    {
       "label": "Facilities",
       "path": "#featureslider",
       "offset": "-10"
@@ -105,67 +110,97 @@
     {
       "image": "../../assets/image/icon-2.png",
       "title": "Playing Fields",
-      "des": "3"
+      "des": "2"
     },
     {
       "image": "../../assets/image/icon-1.png",
       "title": "Hours Played",
-      "des": "400+"
+      "des": "1,500+"
     },
     {
       "image": "../../assets/image/icon-4.png",
       "title": "Active Players",
-      "des": "250+"
+      "des": "500+"
+    },
+    {
+      "image": "../../assets/image/favicon.png",
+      "title": "Start Date",
+      "des": "January 2019"
     }
   ],
   "BETA_FEATURE": [
     {
       "image": "../../assets/image/crypto/beta-1.svg",
       "title": "Expat Football Association",
-      "des": "official partner"
+      "des": "Events partner"
     },
     {
       "image": "../../assets/image/crypto/beta-2.svg",
-      "title": "Radiant ",
-      "des": "official partner"
+      "title": "Radiant Sports Service LLC",
+      "des": "License partner"
     },
     {
       "image": "../../assets/image/crypto/beta-3.svg",
       "title": "Smart Vision School",
-      "des": "official partner"
+      "des": "Facility partner"
+    },
+    {
+      "image": "../../assets/image/crypto/beta-3.svg",
+      "title": "Malaeb",
+      "des": "Booking partner"
+    },
+    {
+      "image": "../../assets/image/crypto/beta-3.svg",
+      "title": "Malaeb Oleh",
+      "des": "Booking partner"
     }
   ],
   "menuWidget": [
     {
       "id": 1,
-      "title": "About Us",
+      "title": " ",
       "menuItems": [
         {
           "id": 1,
-          "url": "#",
-          "text": "Return Policy"
+          "url": "#banner_section",
+          "text": "Home"
+        },
+        {
+          "id": 2,
+          "url": "#scalable",
+          "text": "About"
+        },
+        {
+          "id": 3,
+          "url": "#featureslider",
+          "text": "Facilities"
         }
       ]
     },
     {
       "id": 2,
-      "title": "Our Information",
+      "title": " ",
       "menuItems": [
         {
           "id": 1,
-          "url": "#",
-          "text": "Return Policy"
+          "url": "#betasection",
+          "text": "Partners"
+        },
+        {
+          "id": 1,
+          "url": "#footerSection",
+          "text": "Contact Us"
         }
       ]
     },
     {
       "id": 3,
-      "title": "My Account",
+      "title": " ",
       "menuItems": [
         {
           "id": 1,
-          "url": "#",
-          "text": "Press inquiries"
+          "url": "#control",
+          "text": "Social Football"
         }
       ]
     }

@@ -44,7 +44,13 @@ const BetaSection = ({
           <FeatureSection>
             {Data.cryptoJson.BETA_FEATURE.map((item, index) => (
               <Fade up key={`feature-${index}`}>
-                <div className="featureWrapper">
+                <div
+                  className="featureWrapper"
+                  style={{
+                    marginLeft: "10px",
+                    marginRight: "10px"
+                  }}
+                >
                   <Image src={item.image.publicURL} alt={item.title} />
                   <Box className="contextPortion">
                     <Heading
@@ -114,7 +120,8 @@ BetaSection.defaultProps = {
     color: "#32325d",
     letterSpacing: "-0.010em",
     mb: "10px",
-    textAlign: ["left", "left"]
+    textAlign: ["left", "left"],
+    minWidth: "300px"
   },
   // Trusted section description default style
   featureDescriptionStyle: {

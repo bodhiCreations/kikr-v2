@@ -69,9 +69,9 @@ const ContactSection = ({
                   {...note}
                   content="Become part of our ever growing community. "
                 />
-                <Link to="/crypto" className="">
+                {/* <Link to="/crypto" className="">
                   Join us on Telegram.
-                </Link>
+                </Link> */}
               </Box>
             </Box>
           </Box>
