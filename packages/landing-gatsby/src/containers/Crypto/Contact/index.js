@@ -139,6 +139,7 @@ ContactSection.defaultProps = {
     pl: "22px",
     pr: "22px",
     colors: "primaryWithBg",
+    backgroundColor: "#0c8c4c",
     height: `${4}`
   },
   note: {
