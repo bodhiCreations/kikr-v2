@@ -31,7 +31,7 @@ const ControlSection = ({
     <ControlWrapper id="control">
       <Container>
         <Box className="row" {...row}>
-          <Box className="colleft" {...col} style={{ flexDirection: "column" }}>
+          <Box className="colleft" {...col}>
             <Image
               src={ControlImage}
               className="controlImage"
@@ -86,16 +86,17 @@ ControlSection.defaultProps = {
     flexBox: true,
     flexWrap: "wrap",
     ml: "-15px",
-    mr: "-15px"
+    mr: "-15px",
+    mt: "20px"
   },
   // Transactions section col default style
   col: {
-    pr: "15px",
-    pl: "15px",
     width: [1, 1 / 2, 1 / 2, 1 / 2, 1 / 2],
     flexBox: true,
+    alignContent: "left",
     alignSelf: "center"
   },
+
   // Transactions section title default style
   title: {
     fontSize: ["24px", "26px", "30px", "36px", "40px"],
