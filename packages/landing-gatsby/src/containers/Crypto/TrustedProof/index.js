@@ -1,17 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
-import Fade from "react-reveal/Fade";
 import Box from "reusecore/src/elements/Box";
 import Image from "reusecore/src/elements/Image";
-import Text from "reusecore/src/elements/Text";
 import Heading from "reusecore/src/elements/Heading";
 import FeatureBlock from "common/src/components/FeatureBlock";
 import Container from "common/src/components/UI/Container";
-import { TrustedWrapper, FeatureSection } from "./trustedProof.style";
-import AppButton from "common/src/assets/image/crypto/app.svg";
-import PlayButton from "common/src/assets/image/crypto/playstore.svg";
-import ScalableImage from "common/src/assets/image/social-5.jpg";
+import { TrustedWrapper } from "./trustedProof.style";
+import ScalableImage from "common/src/assets/image/social-7.svg";
 
 const TrustedHistory = ({
   row,
