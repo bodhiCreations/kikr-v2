@@ -11,7 +11,7 @@ import Button from "reusecore/src/elements/Button";
 import FeatureBlock from "common/src/components/FeatureBlock";
 import Container from "common/src/components/UI/Container";
 import { ControlWrapper } from "./controlSection.style";
-import ControlImage from "common/src/assets/image/social-6.jpg";
+import ControlImage from "common/src/assets/image/emotion-2.jpg";
 
 const Completionist = () => (
   <span className="readMore">You are good to go!</span>

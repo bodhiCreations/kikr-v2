@@ -11,6 +11,7 @@ import Particles from "../../Agency/Particle";
 import { Icon } from "react-icons-kit";
 import { socialTwitter } from "react-icons-kit/ionicons/socialTwitter";
 import { facebook2 } from "react-icons-kit/icomoon/facebook2";
+import { instagram } from "react-icons-kit/icomoon/instagram";
 import { whatsapp } from "react-icons-kit/icomoon/whatsapp";
 import BannerBG from "common/src/assets/image/crypto/white_bg1.svg";
 import BannerWrapper, { BgImageWrapper } from "./bannerSection.style";
@@ -37,22 +38,26 @@ const BannerSection = ({
   );
   const ShareButtonGroup = () => (
     <Fragment>
-      <Button
-        title="Follow on Twitter"
-        variant="textButton"
-        iconPosition="left"
-        icon={<Icon icon={socialTwitter} />}
-        {...outlineBtnStyle}
-        className="btnWithoutColor"
-      />
-      <Button
-        title="Follow on Facebook"
-        variant="textButton"
-        iconPosition="left"
-        icon={<Icon icon={facebook2} />}
-        {...outlineBtnStyle}
-        className="btnWithoutColor"
-      />
+      <a href="https://www.instagram.com/kikr.fit">
+        <Button
+          title="Follow on Instagram"
+          variant="textButton"
+          iconPosition="left"
+          icon={<Icon icon={instagram} />}
+          {...outlineBtnStyle}
+          className="btnWithoutColor"
+        />
+      </a>
+      <a href="https://www.facebook.com/kikr.fit/">
+        <Button
+          title="Follow on Facebook"
+          variant="textButton"
+          iconPosition="left"
+          icon={<Icon icon={facebook2} />}
+          {...outlineBtnStyle}
+          className="btnWithoutColor"
+        />
+      </a>
     </Fragment>
   );
   return (
