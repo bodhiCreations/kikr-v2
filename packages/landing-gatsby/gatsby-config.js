@@ -20,6 +20,18 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-156170111-1"
+      }
+    },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "598313490727805"
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `common`,
